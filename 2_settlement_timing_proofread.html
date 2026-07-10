@@ -4,66 +4,92 @@
 <meta charset="UTF-8">
 <title>When will the wadiz settlement take place? (Proofread)</title>
 <style>
-  body { font-family: Arial, "Malgun Gothic", sans-serif; background:#f5f6f8; margin:0; padding:40px 20px; color:#222; }
-  .page { max-width: 860px; margin: 0 auto; background:#fff; padding:40px 48px; border-radius:8px; box-shadow:0 1px 4px rgba(0,0,0,0.08); }
-  .badge { display:inline-block; background:#1F3864; color:#fff; font-size:12px; font-weight:bold; padding:4px 10px; border-radius:12px; margin-bottom:14px; letter-spacing:.3px; }
-  h1 { font-size:26px; margin:0 0 6px; color:#1F3864; }
-  .source { font-size:13px; color:#777; margin-bottom:20px; }
-  .source a { color:#0563C1; }
-  .note { font-size:13px; font-style:italic; color:#555; background:#F2F2F2; padding:10px 14px; border-radius:4px; margin-bottom:24px; }
-  h2 { font-size:20px; color:#1F3864; border-bottom:2px solid #e3e7ee; padding-bottom:6px; margin-top:38px; }
-  h3 { font-size:16px; color:#31456A; margin-top:26px; }
-  p { line-height:1.65; font-size:15px; }
-  ol, ul { line-height:1.65; font-size:15px; padding-left:26px; }
-  li { margin-bottom:8px; }
-  table { border-collapse:collapse; width:100%; margin:16px 0; font-size:14px; }
-  th, td { border:1px solid #ddd; padding:8px 10px; text-align:left; vertical-align:top; }
-  th { background:#1F3864; color:#fff; }
-  .callout { background:#FFF2CC; border-left:4px solid #E0B400; padding:14px 18px; border-radius:4px; margin-top:16px; }
-  .callout h4 { margin:0 0 6px; font-size:14px; color:#7a5c00; }
-  .example { background:#F7F9FC; border:1px solid #dbe2ee; border-radius:6px; padding:14px 18px; margin-top:14px; font-size:14px; }
-  .example li { margin-bottom:4px; }
-  footer { margin-top:40px; font-size:12px; color:#999; border-top:1px solid #eee; padding-top:14px; }
+  :root{ --teal:#00c2b8; --text:#1a1a1a; --gray:#666; --border:#e7e7e7; --soft:#f7f7f8; }
+  * { box-sizing:border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; margin:0; color:var(--text); background:var(--soft); }
+  header.site{ display:flex; align-items:center; justify-content:center; gap:44px; padding:18px 40px; border-bottom:1px solid var(--border); background:#fff; }
+  .logo{ font-weight:800; font-size:19px; color:var(--text); margin-right:20px; }
+  .logo span{ font-weight:400; margin-left:4px; }
+  nav.main{ display:flex; gap:30px; }
+  nav.main a{ color:#333; text-decoration:none; font-size:14.5px; font-weight:700; }
+  .wrap{ max-width:860px; margin:0 auto; padding:40px 40px 70px; }
+  .badge{ display:inline-block; background:#fff3cd; color:#7a5c00; font-size:11.5px; font-weight:700; padding:3px 10px; border-radius:10px; border:1px solid #ffe69c; margin-bottom:18px; }
+  .badge a{ color:#7a5c00; }
+  .crumb{ font-size:13.5px; color:var(--gray); margin-bottom:14px; }
+  .crumb .cur{ color:var(--teal); font-weight:600; }
+  h1.title{ font-size:28px; font-weight:800; margin:0 0 22px; }
+  .note{ font-size:14.5px; font-weight:700; background:#fff; border:1px solid var(--border); border-radius:6px; padding:14px 18px; margin-bottom:26px; }
+  h2.sec{ font-size:19px; font-weight:800; margin-top:38px; margin-bottom:12px; }
+  h3.sub{ font-size:16px; font-weight:800; color:#333; margin-top:26px; }
+  p{ line-height:1.8; font-size:15px; background:#fff; }
+  .card p, .card ol, .card ul, .card table{ background:transparent; }
+  .card{ background:#fff; border:1px solid var(--border); border-radius:8px; padding:22px 26px; margin-bottom:18px; }
+  ol, ul{ line-height:1.8; font-size:15px; padding-left:24px; }
+  li{ margin-bottom:8px; }
+  table{ border-collapse:collapse; width:100%; margin:14px 0; font-size:13.5px; background:#fff; }
+  th, td{ border:1px solid var(--border); padding:9px 11px; text-align:left; vertical-align:top; }
+  th{ background:#f0f4f4; color:#333; font-weight:700; }
+  .callout{ background:#FFF6E0; border-left:4px solid #E0B400; padding:14px 18px; border-radius:4px; margin-top:16px; font-size:14px; }
+  .callout h4{ margin:0 0 6px; font-size:14px; color:#7a5c00; }
+  .example{ background:#fff; border:1px solid var(--border); border-radius:6px; padding:16px 20px; margin-top:14px; font-size:14px; }
+  footer.site{ background:#fff; border-top:1px solid var(--border); padding:34px 40px; font-size:12.5px; color:#888; margin-top:40px; }
+  footer.site .flinks{ display:flex; gap:16px; flex-wrap:wrap; margin-bottom:12px; color:#555; font-weight:600; }
+  footer.site .fmeta{ line-height:1.9; }
 </style>
 </head>
 <body>
-  <div class="page">
-    <span class="badge">PROOFREAD VERSION</span>
-    <h1>When will the wadiz settlement take place?</h1>
-    <div class="source">Source: <a href="https://helpcenter.wadiz.kr/hc/en-us/articles/25510218201497" target="_blank">helpcenter.wadiz.kr &ndash; When will the wadiz settlement take place?</a></div>
-    <div class="note">This guidance applies only to Korean manufacturers (manufacturers holding a Korean business registration certificate).</div>
 
-    <h2>Settlement of Korean Makers</h2>
+  <header class="site">
+    <span class="logo">wadiz<span>help center</span></span>
+    <nav class="main">
+      <a href="#">Wadiz Home</a>
+      <a href="#">Maker Center</a>
+      <a href="#">Ad Center</a>
+      <a href="#">Submit a Request</a>
+    </nav>
+  </header>
+
+  <div class="wrap">
+    <span class="badge">&#9998; PROOFREAD VERSION &mdash; source: <a href="https://helpcenter.wadiz.kr/hc/en-us/articles/25510218201497">helpcenter.wadiz.kr</a></span>
+    <div class="crumb">wadiz Help Center / Maker / <span class="cur">Payout</span></div>
+    <h1 class="title">When will the wadiz settlement take place?</h1>
+    <div class="note">&#8251; This guidance applies only to Korean manufacturers (manufacturers holding a Korean business registration certificate).</div>
+
+    <h2 class="sec">&#9989; Settlement of Korean Makers</h2>
     <p>Funding and Pre-order projects in Korea are settled in two installments: an interim settlement and a final settlement. Among Pre-order types, 'Special Configuration' and 'Limited Edition' projects are paid out entirely as a single final settlement (100% of the settlement amount). Wadiz makes settlement payments every Monday, Wednesday, and Friday.</p>
 
-    <h3>Funding / Pre-order (Domestic Only) Settlement</h3>
-    <ol>
-      <li>Within 5 business days of the project's end date, we will email the interim settlement statement to the maker's registered email address.</li>
-      <li>After you review the interim settlement statement, the interim settlement will be paid on the next available payment date (Monday, Wednesday, or Friday) following the date the statement was sent.</li>
-      <li>Based on the delivery completion date, the final settlement statement will be sent 25 days later (plus 1 additional business day).</li>
-      <li>The final settlement will be paid on the next available Wednesday or Friday following the date the final settlement statement is sent.</li>
-      <li>The final settlement can only proceed after you ship the reward and enter the shipping details in the Maker Studio [Shipping/Refund Management] menu.</li>
-      <li>For intangible rewards (membership, subscription, license, etc.) or combined intangible/tangible rewards, the delivery completion date is the date the reward's use is completed or its validity period expires.</li>
-      <li>For intangible rewards such as classes/consultations or usage/accommodation rights, in domestic Funding or Pre-order projects, the settlement ratio varies based on the amount raised:
-        <ul>
-          <li>Under KRW 10 million raised: 80% interim settlement, 20% final settlement.</li>
-          <li>KRW 10 million or more raised: 60% interim settlement, 40% final settlement.</li>
-          <li>KRW 50 million or more raised: 60% interim settlement, 20% second settlement (once the reward becomes available), and 20% final settlement (once the availability period ends).</li>
-        </ul>
-      </li>
-    </ol>
+    <h3 class="sub">&#128269; Funding / Pre-order (Domestic Only) Settlement</h3>
+    <div class="card">
+      <ol>
+        <li>Within 5 business days of the project's end date, we will email the interim settlement statement to the maker's registered email address.</li>
+        <li>After you review the interim settlement statement, the interim settlement will be paid on the next available payment date (Monday, Wednesday, or Friday) following the date the statement was sent.</li>
+        <li>Based on the delivery completion date, the final settlement statement will be sent 25 days later (plus 1 additional business day).</li>
+        <li>The final settlement will be paid on the next available Wednesday or Friday following the date the final settlement statement is sent.</li>
+        <li>The final settlement can only proceed after you ship the reward and enter the shipping details in the Maker Studio [Shipping/Refund Management] menu.</li>
+        <li>For intangible rewards (membership, subscription, license, etc.) or combined intangible/tangible rewards, the delivery completion date is the date the reward's use is completed or its validity period expires.</li>
+        <li>For intangible rewards such as classes/consultations or usage/accommodation rights, in domestic Funding or Pre-order projects, the settlement ratio varies based on the amount raised:
+          <ul>
+            <li>Under KRW 10 million raised: 80% interim settlement, 20% final settlement.</li>
+            <li>KRW 10 million or more raised: 60% interim settlement, 40% final settlement.</li>
+            <li>KRW 50 million or more raised: 60% interim settlement, 20% second settlement (once the reward becomes available), and 20% final settlement (once the availability period ends).</li>
+          </ul>
+        </li>
+      </ol>
+    </div>
 
-    <h3>Pre-order (Special Configuration / Limited Edition) Settlement</h3>
-    <ol>
-      <li>Based on the delivery completion date, the final settlement statement will be sent 25 days later (plus 1 additional business day).</li>
-      <li>For intangible rewards (membership, subscription, license, etc.) or combined intangible/tangible rewards, the delivery completion date is the date the reward's use is completed or its validity period expires.</li>
-      <li>For original digital content such as e-book PDF files or class lecture VOD files, the final settlement statement will be sent 25 days (or more) after the reward file is delivered (e.g., by email).</li>
-      <li>The final settlement will be paid on the next available Wednesday or Friday following the date the final settlement statement is sent.</li>
-      <li>Special Configuration and Limited Edition Pre-order projects are not eligible for interim settlement by default. If you'd like to receive an advance payment similar to Funding and standard Pre-order projects in Korea, you can apply for the Interim Settlement Service.</li>
-      <li>For the Interim Settlement (Seonjeongsan) service, 60% of the settlement amount will be paid in advance, but only for projects approved after application. The advance payment amount may vary depending on internal policy, so please refer to the Interim Settlement Service Terms and Conditions for details.</li>
-    </ol>
+    <h3 class="sub">&#128269; Pre-order (Special Configuration / Limited Edition) Settlement</h3>
+    <div class="card">
+      <ol>
+        <li>Based on the delivery completion date, the final settlement statement will be sent 25 days later (plus 1 additional business day).</li>
+        <li>For intangible rewards (membership, subscription, license, etc.) or combined intangible/tangible rewards, the delivery completion date is the date the reward's use is completed or its validity period expires.</li>
+        <li>For original digital content such as e-book PDF files or class lecture VOD files, the final settlement statement will be sent 25 days (or more) after the reward file is delivered (e.g., by email).</li>
+        <li>The final settlement will be paid on the next available Wednesday or Friday following the date the final settlement statement is sent.</li>
+        <li>Special Configuration and Limited Edition Pre-order projects are not eligible for interim settlement by default. If you'd like to receive an advance payment similar to Funding and standard Pre-order projects in Korea, you can apply for the Interim Settlement Service.</li>
+        <li>For the Interim Settlement (Seonjeongsan) service, 60% of the settlement amount will be paid in advance, but only for projects approved after application. The advance payment amount may vary depending on internal policy, so please refer to the Interim Settlement Service Terms and Conditions for details.</li>
+      </ol>
+    </div>
 
-    <h3>Settlement Process for Class / Consultation / Accommodation Reward Projects</h3>
+    <h3 class="sub">&#128269; Settlement Process for Class / Consultation / Accommodation Reward Projects</h3>
     <p>For projects offering classes/consultations or usage/accommodation rights as rewards, the settlement structure changes once the amount raised reaches KRW 50 million: 20% of the total settlement amount is paid only after the reward has been used or its validity period has expired.</p>
     <table>
       <tr><th>Funding / Pre-order (Domestic Only)</th><th>Pre-order (Special Configuration / Limited Edition)</th></tr>
@@ -73,7 +99,7 @@
       </tr>
     </table>
 
-    <h2>Settlement of Global Makers</h2>
+    <h2 class="sec">&#9989; Settlement of Global Makers</h2>
     <div class="note">This guidance applies only to global manufacturers (manufacturers with business registration outside Korea). Overseas makers who have officially registered as a business operator in Korea, including agencies, will follow the same settlement method as Korean makers described above.</div>
     <p><strong>Global Maker:</strong> A manufacturer with a business license issued outside Korea. Starting with projects submitted after June 1, 2026, global manufacturers will follow the same settlement method as Korean makers.</p>
 
@@ -99,18 +125,20 @@
       </tr>
     </table>
 
-    <h3>Settlement Process (Global Makers)</h3>
-    <ol>
-      <li>The interim settlement statement is sent within 5 business days of the project's end date (viewable under Maker Studio &gt; Settlement Details).</li>
-      <li>Ship rewards via Maker Studio &gt; Shipping/Refund Management so Wadiz can confirm delivery.</li>
-      <li>Once all rewards are delivered, final settlement begins: the final settlement statement is sent within 10 business days after the 25-day refund period (starting from the delivery completion date) ends.</li>
-    </ol>
+    <h3 class="sub">&#128269; Settlement Process (Global Makers)</h3>
+    <div class="card">
+      <ol>
+        <li>The interim settlement statement is sent within 5 business days of the project's end date (viewable under Maker Studio &gt; Settlement Details).</li>
+        <li>Ship rewards via Maker Studio &gt; Shipping/Refund Management so Wadiz can confirm delivery.</li>
+        <li>Once all rewards are delivered, final settlement begins: the final settlement statement is sent within 10 business days after the 25-day refund period (starting from the delivery completion date) ends.</li>
+      </ol>
+    </div>
     <div class="callout">
       <h4>&#9888; Flagged for confirmation</h4>
-      The source page separately states the final settlement statement takes "35 business days" to send after delivery completion, which appears inconsistent with the "25-day refund period + within 10 business days" breakdown given above. This discrepancy was not resolved during proofreading &mdash; please confirm with the responsible team which figure is correct before publishing.
+      The source page separately states the final settlement statement takes "35 business days" to send after delivery completion, which appears inconsistent with the "25-day refund period + within 10 business days" breakdown above. This discrepancy was not resolved during proofreading &mdash; please confirm with the responsible team which figure is correct before publishing.
     </div>
 
-    <h3>Settlement Schedule</h3>
+    <h3 class="sub">&#128269; Settlement Schedule</h3>
     <p>Wadiz pays global makers (those with a business license outside Korea) on a weekly basis. Times are in Korea Standard Time; if the scheduled Wednesday is a public holiday, payment is made on the next business day. Applies to projects whose settlement statement was issued between Monday and Friday &mdash; payment date is the following Wednesday after the statement is issued.</p>
 
     <div class="example">
@@ -125,9 +153,19 @@
         <li>2026.07.08 (Wed): Final settlement paid</li>
       </ul>
     </div>
-    <p style="font-size:13px; color:#777; margin-top:14px;">The above policy applies to projects submitted on or after June 1, 2026.</p>
-
-    <footer>Corrected copy applied by proofreading review &middot; "Manufacturer" terminology intentionally kept as in the original source (per review team decision). "Selected mountain / selected calculation" mistranslations corrected to "interim settlement" throughout.</footer>
+    <p style="font-size:13px; color:#888; margin-top:14px; background:transparent;">The above policy applies to projects submitted on or after June 1, 2026.</p>
   </div>
+
+  <footer class="site">
+    <div class="flinks">
+      <span>Wadiz Policies &amp; Terms</span><span>Privacy Policy</span><span>Submit a Request</span><span>Maker Center</span><span>Ad Center</span>
+    </div>
+    <div class="fmeta">
+      wadiz Co., Ltd. &middot; CEO Shin Hyesung &middot; Business registration number 258-87-01370<br>
+      402, PDC A, 242, Pangyo-ro, Bundang-gu, Seongnam-si, Gyeonggi-do, Republic of Korea &middot; info@wadiz.kr<br>
+      &copy; wadiz Co., Ltd. &middot; English (United States)
+    </div>
+  </footer>
+
 </body>
 </html>
